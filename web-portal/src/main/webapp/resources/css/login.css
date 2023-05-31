@@ -1,0 +1,298 @@
+body {
+	background: url('../../resources/assets/images/login_bg.png') no-repeat center center fixed;
+
+	background-size: cover
+}
+
+#login .form-control {
+	border: solid 1px #6e8dc7;
+}
+
+.too-small {
+	font-size: .675em;
+}
+
+.pullee {
+	width: 100%;
+	appearance: none;
+	border: 0px;
+}
+
+.pullee:active::-webkit-slider-thumb {
+	appearance: none;
+	transform: scale(1.1);
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+}
+
+.pullee:active::-moz-range-thumb {
+	border: 0;
+	transform: scale(1.1);
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+}
+
+.pullee:active::-ms-thumb {
+	transform: scale(1.1);
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+}
+
+.pullee:focus {
+	outline: none;
+}
+
+.pullee::-webkit-slider-thumb {
+	margin-top: 0.2rem;
+	padding: 0.8rem;
+	appearance: none;
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: white;
+	transform-origin: 50% 50%;
+	transform: scale(1);
+	transition: transform ease-out 100ms;
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+}
+
+.pullee::-moz-range-thumb {
+	border: 0;
+	display: block;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	background: #fff;
+	transform-origin: 50% 50%;
+	transform: scale(1);
+	transition: transform ease-out 100ms;
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+}
+
+.pullee::-ms-thumb {
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background: #fff;
+	transform-origin: 50% 50%;
+	transform: scale(1);
+	transition: transform ease-out 100ms;
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+}
+
+.pullee::-webkit-slider-runnable-track {
+	height: 2rem;
+	padding: 0.25rem;
+	box-sizing: content-box;
+	border-radius: 3rem;
+	background-color: #2e5caa;
+}
+
+.pullee::-moz-range-track .pullee {
+	width: 10rem;
+	appearance: none;
+}
+
+.pullee::-moz-range-track .pullee:active::-webkit-slider-thumb {
+	appearance: none;
+	transform: scale(1.1);
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+}
+
+.pullee::-moz-range-track .pullee:active::-moz-range-thumb {
+	border: 0;
+	transform: scale(1.1);
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+}
+
+.pullee::-moz-range-track .pullee:active::-ms-thumb {
+	transform: scale(1.1);
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+}
+
+.pullee::-moz-range-track .pullee:focus {
+	outline: none;
+}
+
+.pullee::-moz-range-track .pullee::-webkit-slider-thumb {
+	appearance: none;
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background: #fff;
+	transform-origin: 50% 50%;
+	transform: scale(1);
+	transition: transform ease-out 100ms;
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+}
+
+.pullee::-moz-range-track .pullee::-moz-range-thumb {
+	border: 0;
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background: #fff;
+	transform-origin: 50% 50%;
+	transform: scale(1);
+	transition: transform ease-out 100ms;
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+}
+
+.pullee::-moz-range-track .pullee::-ms-thumb {
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background: #fff;
+	transform-origin: 50% 50%;
+	transform: scale(1);
+	transition: transform ease-out 100ms;
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+}
+
+.pullee::-moz-range-track .pullee::-webkit-slider-runnable-track {
+	height: 1rem;
+	padding: 0.25rem;
+	box-sizing: content-box;
+	border-radius: 1rem;
+	background-color: #2e5caa;
+}
+
+.pullee::-moz-range-track {
+	height: 1rem;
+	padding: 0.5rem;
+	box-sizing: content-box;
+	border-radius: 1rem;
+	background-color: #2e5caa;
+}
+
+.pullee::-moz-range-track .pullee::-moz-focus-outer {
+	border: 0;
+}
+
+.pullee::-moz-range-track .pullee::-ms-track {
+	border: 0;
+	height: 1rem;
+	padding: 0.25rem;
+	box-sizing: content-box;
+	border-radius: 1rem;
+	background-color: #2e5caa;
+	color: transparent;
+}
+
+.pullee::-moz-range-track .pullee::-ms-fill-lower, .pullee::-moz-range-track .pullee::-ms-fill-upper
+	{
+	background-color: transparent;
+}
+
+.pullee::-moz-range-track .pullee::-ms-tooltip {
+	display: none;
+}
+
+.pullee::-moz-range-track html {
+	font-size: 32px;
+	text-align: center;
+}
+
+.pullee::-moz-range-track h1 {
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: 1.25px;
+}
+
+.pullee::-moz-range-track .center-xy {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.pullee::-moz-focus-outer {
+	border: 0;
+}
+
+.pullee::-ms-track {
+	border: 0;
+	height: 1rem;
+	padding: 0.25rem;
+	box-sizing: content-box;
+	border-radius: 1rem;
+	background-color: #2e5caa;
+	color: transparent;
+}
+
+.pullee::-ms-fill-lower, .pullee::-ms-fill-upper {
+	background-color: transparent;
+}
+
+.pullee::-ms-tooltip {
+	display: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.slider-text {
+		position: absolute;
+		font-size: small;
+		width: 100%;
+		/* max-width: 50%; */
+		padding: 0.7rem;
+		right: 0;
+		color: white;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.slider-text {
+		position: absolute;
+		font-size: small;
+		width: 50%;
+		/* max-width: 50%; */
+		padding: 0.7rem;
+		right: 0;
+		color: white;
+	}
+}
+
+@-moz-document url-prefix() { 
+	.slide-text { margin-top:-12px;
+}
+
+}
+.pullee-readyonly::-webkit-slider-thumb {
+	background-color: #d0d0d0;
+}
+
+.pullee-readyonly::-moz-range-thumb {
+	background-color: #d0d0d0;
+}
+
+.pullee-slider-text {
+	color: #d0d0d0 !important;
+}
+
+.pullee-readyonly::-webkit-slider-thumb {
+	background-color: #d0d0d0;
+}
+
+.pullee-readyonly::-moz-range-thumb {
+	background-color: #d0d0d0;
+}
+
+.pullee-slider-text {
+	color: #d0d0d0 !important;
+}

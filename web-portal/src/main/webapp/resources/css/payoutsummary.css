@@ -1,0 +1,272 @@
+.pop {
+	font-family: Poppins, sans-serif;
+}
+
+.pop-color {
+	color: #005baa;
+	font-family: Poppins, sans-serif;
+}
+
+.pop-color-grey {
+	font-family: Poppins, sans-serif;
+	font-weight: 600;
+	color: #2D2D2D;
+}
+
+.dropdown a.nav-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 130px;
+	height: 45px;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+	border-radius: 50px;
+}
+
+.dropdown a.nav-link img {
+	margin-right: 5px;
+	width: 30px;
+	height: 30px;
+}
+
+.dropdown-menu {
+	padding: 10px;
+}
+
+input[type="date"] {
+	width: 130px;
+	height: 38px;
+	vertical-align: middle;
+}
+
+input[type="date"]::before {
+	content: attr(data-placeholder);
+	width: 100%;
+	vertical-align: middle;
+}
+
+/* hide our custom/fake placeholder text when in focus to show the default
+ * 'mm/dd/yyyy' value and when valid to show the users' date of birth value.
+ */
+input[type="date"]:focus::before {
+	content: attr(data-placeholder);
+}
+
+input[type="date"]:valid::before {
+	display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+	height: 20px;
+	cursor: pointer;
+	border-radius: 4px;
+	margin-right: 2px;
+	filter: invert(53%) sepia(84%) saturate(2031%) hue-rotate(156deg)
+		brightness(99%) contrast(101%);
+	vertical-align: middle;
+}
+
+.search-button {
+	background-color: #005baa;
+}
+
+.bi-search-icon {
+	content: url(/web-portal/resources/assets/icons/search.png);
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.bi-export-arrow-down {
+	content: url(/web-portal/resources/assets/icons/updown.png);
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+}
+
+th, td {
+	white-space: nowrap;
+}
+
+tbody tr:nth-of-type(odd) {
+	background-color: #f7fdfd !important;
+}
+
+tbody tr:nth-of-type(even) {
+	background-color: #ffffff !important;
+}
+
+.Mobi-summary {
+	width: 35px;
+	height: 35px;
+	border-radius: 5px;
+}
+
+.leftside-menu {
+	background: #005BAA !important;
+}
+
+.side-nav-item {
+	min-height: 50px;
+	padding: 0px 0px 0px 0px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	letter-spacing: 0.02em;
+	transition: ease-out 0.5s;
+}
+
+.side-nav-item i {
+	width: 20px;
+	font-size: 19px;
+	margin-left: -30px;
+}
+
+.side-nav-item:hover {
+	background: #488AC7;
+	border-right: 6px solid white;
+	border-radius: 1px;
+}
+
+.mobi-active {
+	background: #488AC7;
+	border-right: 6px solid white;
+	border-radius: 1px;
+	width: 300px;
+}
+
+/* For larger screens */
+@media ( min-width : 768px) {
+	/* Add margin to the end of the flex container */
+	#topbar-container {
+		margin-right: 30px;
+	}
+}
+
+/* Pagination Starts  */
+#pagination {
+	/* margin-right: 200px; */
+	display: flex;
+	justify-content: end;
+	width: 100%;
+	/* display: block; 
+	vertical-align: middle; */
+	border-radius: 5px;
+	/* padding: 1px 2px 4px 2px; */
+	border: 1px solid transparent;
+	/* border-top: 1px solid black; 
+	border-bottom: 1px solid black; */
+	background-color: #ffffff;
+	/* float: right; 
+	margin-right: 0px; 
+	margin-left: 10px; 
+	margin-bottom: 10px; */
+	font-family: "Poppins", sans-serif;
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+#pagination a, #pagination i {
+	display: inline-block;
+	vertical-align: middle;
+	width: 1.5rem;
+	text-align: center;
+	font-size: 14px;
+	padding: 2.5px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+#pagination a {
+	margin: 0 1px;
+	border-radius: 50%;
+	border: 0px solid #005baa;
+	cursor: pointer;
+	background-color: white;
+	color: #005baa;
+	height: 1.3rem;
+	/* vertical-align: middle; */
+	padding-top: 0px;
+}
+
+#pagination a.current {
+	border: 1px solid #005baa;
+	box-shadow: 0 1px 1px #999;
+	color: #005baa;
+}
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close Button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#fromDate, #toDate {
+	width: 130px;
+	height: 38px;
+}
+/* 
+#fromDate {
+	position: relative;
+	Add padding on the right to make space for the image
+	padding-right: 30px;
+}
+
+#fromDate::after {
+	content: url('../assets/images/Date_range.png');
+	padding-left: 30px;
+	background-size: 15px;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	background-position-x: 150px;
+	background-position-y: center
+} */
+#fromDate,#toDate {
+	background-image: url('../assets/images/Date_range.png');
+	background-size: 15px;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	padding-left:20px;
+	background-position: 103px 8px;
+	/* background-position: right center; */
+}
